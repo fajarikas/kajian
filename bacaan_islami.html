@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Qur'an Study</title>
+  </head>
+  <body class="font-poppins text-2xl font-white">
+    <nav class="bg-green-1 px-[85px] py-[29px] w-full h-[171px]">
+      <div class="flex items-center justify-between">
+        <img
+          src="images/logo.png"
+          class="logo"
+          alt=""
+          width="212px"
+          height="113px"
+        />
+
+        <div class="flex gap-6">
+          <a href="index.html">
+            <div
+              class="shadow-xl bg-white rounded-xl h-[55.18px] w-[55.18px] items-center justify-center flex"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.7019 3.4142C15.1916 2.92443 15.9857 2.92443 16.4755 3.4142L19.3511 6.28979V5.55514C19.3511 4.8625 19.9125 4.30101 20.6052 4.30101H24.3676C25.0602 4.30101 25.6217 4.8625 25.6217 5.55514V12.5604L27.7626 14.7014C28.2524 15.1911 28.2524 15.9852 27.7626 16.475C27.2729 16.9648 26.4788 16.9648 25.989 16.475L25.6217 16.1077V24.3671C25.6217 26.445 23.9372 28.1295 21.8593 28.1295H9.31801C7.2401 28.1295 5.55562 26.445 5.55562 24.3671V16.1077L5.1883 16.475C4.69853 16.9648 3.90446 16.9648 3.41469 16.475C2.92492 15.9852 2.92492 15.1911 3.41469 14.7014L5.9225 12.1936C5.9228 12.1933 5.9231 12.193 5.9234 12.1927L14.7019 3.4142ZM8.06388 13.5994V24.3671C8.06388 25.0597 8.62538 25.6212 9.31801 25.6212H21.8593C22.552 25.6212 23.1134 25.0597 23.1134 24.3671V13.5994L19.7185 10.2045C19.7184 10.2044 19.7183 10.2043 19.7182 10.2042L15.5887 6.07461L8.06388 13.5994ZM21.8593 8.79805L23.1134 10.0522V6.80927H21.8593V8.79805Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <div class="flex">
+            <a
+              id="dropdownHoverButton"
+              data-dropdown-toggle="dropdownHover"
+              data-dropdown-trigger="hover"
+              href="#"
+            >
+              <div
+                class="shadow-xl bg-white rounded-xl h-[55.18px] w-[55.18px] items-center justify-center flex z-0 relative"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="31"
+                  height="24"
+                  viewBox="0 0 21 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.5887 0.046875C11.2813 0.046875 11.8428 0.608368 11.8428 1.30101V2.65918C15.4017 3.25624 18.1135 6.35139 18.1135 10.0799V17.6047H19.3676C20.0603 17.6047 20.6217 18.1662 20.6217 18.8588C20.6217 19.5515 20.0603 20.113 19.3676 20.113H14.3511C14.3511 22.1909 12.6666 23.8753 10.5887 23.8753C8.51079 23.8753 6.82632 22.1909 6.82632 20.113H1.80979C1.11716 20.113 0.555664 19.5515 0.555664 18.8588C0.555664 18.1662 1.11716 17.6047 1.80979 17.6047H3.06392V10.0799C3.06392 6.35139 5.77571 3.25624 9.33458 2.65918V1.30101C9.33458 0.608368 9.89607 0.046875 10.5887 0.046875ZM5.57219 17.6047H15.6052V10.0799C15.6052 7.30937 13.3593 5.0634 10.5887 5.0634C7.81816 5.0634 5.57219 7.30937 5.57219 10.0799V17.6047ZM9.33458 20.113C9.33458 20.8056 9.89607 21.3671 10.5887 21.3671C11.2813 21.3671 11.8428 20.8056 11.8428 20.113H9.33458Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div
+                class="bg-red-1 rounded-full w-[22px] h-[22px] font-bold font-poppins text-center text-sm absolute right-[75px] top-[50px]"
+              >
+                <p>2</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdownHover"
+          class="mt-[64px] hidden py-3 z-10 absolute bg-gray-2 rounded-lg drop-shadow w-[526px] h-[815px] dark:bg-gray-700"
+        >
+          <p
+            class="px-5 text-white text-xl font-bold border-b border-white pb-2"
+          >
+            Notifikasi
+          </p>
+
+          <div class="block mt-4 text-white">
+            <div class="flex items-center justify-center">
+              <div class="block">
+                <p class="w-[276px] text-[15px]">
+                  Kajian Ustd. Amirudin Cahya <br />
+                  Masjid Agung - Sleman Yogyakarta
+                </p>
+                <p class="text-[10px]">45 menit yang lalu</p>
+              </div>
+              <div>
+                <img src="images/notifikasi-1.png" width="186px" alt="" />
+              </div>
+            </div>
+
+            <div class="mt-5 flex items-center justify-center">
+              <div class="block">
+                <p class="w-[276px] text-[15px]">Usaha Hamas semakin Berani</p>
+                <p class="text-[10px]">
+                  by Cahya Aditya <br />59 menit yang lalu
+                </p>
+              </div>
+              <div>
+                <img src="images/notifikasi-1.png" width="186px" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mx-14 my-[53px] block">
+      <div class="">
+        <div class="block">
+          <a
+            class="bg-green-1 font-bold text-white rounded-[20px] shadow-inner px-4 py-3"
+            href="#"
+          >
+            Bacaan Islami
+          </a>
+        </div>
+
+        <div
+          class="border-gray-1 border-b pb-5 flex justify-between items-center mt-[65px]"
+        >
+          <div class="'block">
+            <p class="text-xl">Kategori Bacaan</p>
+            <div class="mt-2 flex gap-11">
+              <p
+                class="text-xl font-bold text-green-1 bg-gray-3 px-[30px] py-1.5 rounded-md"
+              >
+                Hadist
+              </p>
+              <p
+                class="text-xl font-bold text-green-1 bg-gray-3 px-[30px] py-1.5 rounded-md"
+              >
+                Akhlak
+              </p>
+              <p
+                class="text-xl font-bold text-green-1 bg-gray-3 px-[30px] py-1.5 rounded-md"
+              >
+                Nasihat
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-green-1 rounded-full items-center px-[35px] text-white flex h-[51px]"
+          >
+            <input
+              type="text"
+              placeholder="cari"
+              class="bg-green-1 rounded-full text-white focus:outline-none"
+            />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.9999 21.0004L16.6499 16.6504"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-[45px]">
+        <div class="block">
+          <div>
+            <p class="font-bold text-2xl">Bacaan Hari Ini</p>
+            <div class="w-[600px]">
+              <p class="font-semibold text-2xl text-red-1">
+                Keutamaan membaca surat Al- Kahfi pada Hari Jumat
+              </p>
+              <p class="text-[12px]">Rahma Anisa - 23 Oct</p>
+              <div class="flex justify-between">
+                <div>
+                  <p class="w-[400px] font-medium text-base">
+                    Jakarta - Keutamaan surat Al Kahfi dapat semakin
+                    dimaksimalkan apabila dibaca pada hari Jumat. Pasalnya,
+                    membaca surat Al Kahfi merupakan salah satu sunnah yang
+                    dicontohkan oleh Rasulullah SAW tiap hari Jumat.Melansir
+                    dari buku Majmu Syarif karya Tim Penyusun Spasi Media,
+                    rentang waktu yang disunnahkan yakni dimulai dari
+                    tenggelamnya matahari pada hari Kamis, hingga sesaat
+                    menjelang matahari tenggelam di hari Jumat. Adapun keutamaan
+                    membaca surat Al Kahfi di hari Jumat dapat disimak dari
+                    tulisan yang dilansir dari buku Keutamaan Al-Qur'an Dalam
+                    Perspektif Hadits karya Ahsantudhonni Ahsantudhonni berikut
+                    ini. Apa saja?
+                  </p>
+                  <a href="detail_bacaaan_islami.html">
+                    <p class="italic text-xs text-right">Read more...</p>
+                  </a>
+                </div>
+
+                <img
+                  src="images/bacaan-1.png"
+                  class="w-[329px] right-0 ml-24"
+                  alt=""
+                />
+              </div>
+              <a href="#"> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-l h-[350px]">
+          <p class="font-bold text-xl pl-[22px]">Artikel Islami</p>
+          <div class="block pl-[53px] mt-5">
+            <div class="flex gap-[10px] items-center">
+              <div class="block">
+                <p class="font-bold text-sm w-[238px]">
+                  Sunnah-Sunnah yang dilakukan Rasulullah di hari Jumat
+                </p>
+                <p class="text-xs">Ustd. Idris Ahmad</p>
+                <p class="text-xs">7 Menit membaca</p>
+              </div>
+              <div>
+                <img src="images/baca_juga_1.png" class="w-[160px]" alt="" />
+              </div>
+            </div>
+
+            <div class="mt-5 flex gap-[10px] items-center">
+              <div class="block">
+                <p class="font-bold text-sm w-[238px]">
+                  Hukum Sholat Jum’at bertepatan dengan Hari Raya Idul Fitri dan
+                  Idul Adha
+                </p>
+                <p class="text-xs">Ustd. Zaenudin Farhan</p>
+                <p class="text-xs">10 Menit membaca</p>
+              </div>
+              <div>
+                <img src="images/baca_juga_2.png" class="w-[160px]" alt="" />
+              </div>
+            </div>
+
+            <div class="mt-5 flex gap-[10px] items-center">
+              <div class="block">
+                <p class="font-bold text-sm w-[238px]">
+                  Manfaat Madu dalam Islam dan Kehidupan Rasulullah
+                </p>
+                <p class="text-xs">Ustd. Zaenudin Farhan</p>
+                <p class="text-xs">10 Menit membaca</p>
+              </div>
+              <div>
+                <img src="images/baca_juga_3.png" class="w-[160px]" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-green-1 w-full py-4 mt-44 px-8 font-normal text-[13px] text-white"
+    >
+      <div class="flex justify-between">
+        <div>
+          <p>&copy; 2023.Emakusuma</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <p>Ikuti Kami</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M7.54752 21.5012C16.6042 21.5012 21.5578 13.9979 21.5578 7.49101C21.5578 7.27789 21.5578 7.06573 21.5434 6.85453C22.507 6.15748 23.3389 5.29441 24 4.30573C23.1014 4.70413 22.148 4.96528 21.1718 5.08045C22.1998 4.46514 22.9692 3.49723 23.3366 2.35693C22.3701 2.93054 21.3126 3.33475 20.2099 3.55213C19.4675 2.76271 18.4856 2.23997 17.4162 2.06481C16.3468 1.88966 15.2494 2.07184 14.294 2.58318C13.3385 3.09452 12.5782 3.9065 12.1307 4.89348C11.6833 5.88045 11.5735 6.98739 11.8186 8.04301C9.8609 7.94481 7.94576 7.43604 6.19745 6.54973C4.44915 5.66343 2.90676 4.41939 1.6704 2.89837C1.04073 3.98236 0.847872 5.2656 1.1311 6.48679C1.41433 7.70798 2.15234 8.77532 3.19488 9.47149C2.41123 9.44853 1.64465 9.23712 0.96 8.85517V8.91757C0.960311 10.0544 1.35385 11.1562 2.07387 12.0359C2.79389 12.9157 3.79606 13.5193 4.9104 13.7444C4.18548 13.9422 3.42487 13.9711 2.68704 13.8289C3.00181 14.8073 3.61443 15.6628 4.43924 16.2759C5.26405 16.889 6.25983 17.229 7.28736 17.2485C6.26644 18.0509 5.09731 18.6442 3.84687 18.9944C2.59643 19.3447 1.28921 19.4449 0 19.2894C2.25183 20.7344 4.87192 21.5009 7.54752 21.4974"
+              fill="#687076"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_153_8127)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.0001 5.83781C8.59677 5.83781 5.83789 8.59669 5.83789 12C5.83789 15.4032 8.59677 18.1621 12.0001 18.1621C15.4033 18.1621 18.1622 15.4032 18.1622 12C18.1622 8.59669 15.4033 5.83781 12.0001 5.83781ZM12.0001 15.9999C9.79091 15.9999 8.00005 14.2091 8.00005 12C8.00005 9.79083 9.79091 7.99997 12.0001 7.99997C14.2092 7.99997 16 9.79083 16 12C16 14.2091 14.2092 15.9999 12.0001 15.9999Z"
+                fill="#687076"
+              />
+              <path
+                d="M18.4056 7.03434C19.2009 7.03434 19.8456 6.38967 19.8456 5.59434C19.8456 4.79906 19.2009 4.15439 18.4056 4.15439C17.6103 4.15439 16.9656 4.79906 16.9656 5.59434C16.9656 6.38967 17.6103 7.03434 18.4056 7.03434Z"
+                fill="#687076"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 0C8.74097 0 8.33231 0.0138281 7.05239 0.0722344C5.77514 0.1305 4.9028 0.333328 4.13948 0.63C3.35039 0.936656 2.68116 1.347 2.01408 2.01412C1.34695 2.6812 0.936609 3.35044 0.629953 4.13953C0.333281 4.9028 0.130453 5.77514 0.0721875 7.05239C0.0137812 8.33231 0 8.74097 0 12C0 15.2589 0.0137812 15.6676 0.0721875 16.9475C0.130453 18.2248 0.333281 19.0971 0.629953 19.8604C0.936609 20.6495 1.34695 21.3187 2.01408 21.9859C2.68116 22.653 3.35039 23.0633 4.13948 23.37C4.9028 23.6666 5.77514 23.8695 7.05239 23.9277C8.33231 23.9861 8.74097 23.9999 12 23.9999C15.2589 23.9999 15.6676 23.9861 16.9475 23.9277C18.2248 23.8695 19.0971 23.6666 19.8604 23.37C20.6495 23.0633 21.3187 22.653 21.9859 21.9859C22.653 21.3187 23.0633 20.6495 23.37 19.8604C23.6666 19.0971 23.8695 18.2248 23.9277 16.9475C23.9861 15.6676 23.9999 15.2589 23.9999 12C23.9999 8.74097 23.9861 8.33231 23.9277 7.05239C23.8695 5.77514 23.6666 4.9028 23.37 4.13953C23.0633 3.35044 22.653 2.6812 21.9859 2.01412C21.3187 1.347 20.6495 0.936656 19.8604 0.63C19.0971 0.333328 18.2248 0.1305 16.9475 0.0722344C15.6676 0.0138281 15.2589 0 12 0ZM12 2.1622C15.2041 2.1622 15.5836 2.17439 16.849 2.23214C18.0189 2.28553 18.6543 2.481 19.0772 2.6453C19.6373 2.86298 20.037 3.12305 20.457 3.54295C20.8769 3.96286 21.1369 4.36266 21.3546 4.92272C21.519 5.34558 21.7144 5.98097 21.7678 7.15092C21.8255 8.41631 21.8377 8.79586 21.8377 12C21.8377 15.2041 21.8255 15.5836 21.7678 16.849C21.7144 18.0189 21.519 18.6543 21.3546 19.0772C21.1369 19.6373 20.8769 20.037 20.457 20.457C20.037 20.8769 19.6373 21.1369 19.0772 21.3546C18.6543 21.519 18.0189 21.7144 16.849 21.7678C15.5838 21.8255 15.2043 21.8377 12 21.8377C8.79558 21.8377 8.41617 21.8255 7.15092 21.7678C5.98097 21.7144 5.34558 21.519 4.92272 21.3546C4.36261 21.1369 3.96286 20.8769 3.54291 20.457C3.123 20.037 2.86294 19.6373 2.6453 19.0772C2.48095 18.6543 2.28548 18.0189 2.23209 16.849C2.17434 15.5836 2.16216 15.2041 2.16216 12C2.16216 8.79586 2.17434 8.41631 2.23209 7.15092C2.28548 5.98097 2.48095 5.34558 2.6453 4.92272C2.86294 4.36266 3.123 3.96286 3.54291 3.54295C3.96286 3.12305 4.36261 2.86298 4.92272 2.6453C5.34558 2.481 5.98097 2.28553 7.15092 2.23214C8.41631 2.17439 8.79586 2.1622 12 2.1622Z"
+                fill="#687076"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_153_8127">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_153_8128)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.7466 4.83455C23.119 5.20932 23.3864 5.67531 23.5221 6.1859C24.0239 8.07044 24.0239 12.0004 24.0239 12.0004C24.0239 12.0004 24.0239 15.9304 23.5221 17.815C23.3864 18.3256 23.119 18.7916 22.7466 19.1663C22.3743 19.5411 21.91 19.8115 21.4003 19.9504C19.5239 20.455 12.0239 20.455 12.0239 20.455C12.0239 20.455 4.52393 20.455 2.64756 19.9504C2.13786 19.8115 1.67358 19.5411 1.30121 19.1663C0.928842 18.7916 0.661431 18.3256 0.525744 17.815C0.0239258 15.9304 0.0239258 12.0004 0.0239258 12.0004C0.0239258 12.0004 0.0239258 8.07044 0.525744 6.1859C0.661431 5.67531 0.928842 5.20932 1.30121 4.83455C1.67358 4.45979 2.13786 4.1894 2.64756 4.05044C4.52393 3.5459 12.0239 3.5459 12.0239 3.5459C12.0239 3.5459 19.5239 3.5459 21.4003 4.05044C21.91 4.1894 22.3743 4.45979 22.7466 4.83455ZM15.8421 12.0005L9.56934 8.43182V15.5691L15.8421 12.0005Z"
+                fill="#687076"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_153_8128">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  </body>
+</html>
